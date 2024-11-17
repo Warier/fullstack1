@@ -1,0 +1,55 @@
+.app-container {
+    min-height: 100vh;
+    background-color: #f8f9fa;
+}
+
+.game-card {
+    transition: transform 0.2s;
+    background-color: #ffffff;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.game-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.game-thumb {
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #eee;
+}
+
+.store-banner {
+    height: 60px;
+    object-fit: contain;
+}
+
+.header-container {
+    padding: 20px 0;
+}
+
+.nav-option {
+    color: #6c757d;
+    cursor: pointer;
+    margin: 0 15px;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.nav-option:hover {
+    color: #0d6efd;
+    background-color: rgba(13, 110, 253, 0.1);
+}
+
+.nav-option.active {
+    color: #fff;
+    background-color: #0d6efd;
+}
+
+.nav-option.active:hover {
+    color: #fff;
+    background-color: #0b5ed7;
+}

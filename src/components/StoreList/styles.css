@@ -1,0 +1,38 @@
+.stores-container {
+    position: relative;
+}
+
+.store-card {
+    transition: transform 0.2s;
+    cursor: pointer;
+    border: none;
+    background: linear-gradient(to bottom, #2c3e50, #3498db) !important;
+}
+
+.store-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.store-banner {
+    height: 60px;
+    object-fit: contain;
+    background-color: transparent;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.stores-grid {
+    animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
