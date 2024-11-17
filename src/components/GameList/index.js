@@ -2,6 +2,7 @@ import React from 'react';
 import { Row, Col, Card, Button, Spinner, Alert } from 'react-bootstrap';
 import { useSelector } from 'react-redux';
 import { PLACEHOLDER_IMAGE, ERROR_MESSAGES } from '../../utils/constants';
+import './styles.css';
 
 function GameList() {
     const { games, loading, error } = useSelector(state => state.games);

@@ -3,6 +3,7 @@ import { Row, Col, Card } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
 import { getStores } from '../../services/api';
 import { setStores } from '../../store/gameSlice';
+import './styles.css';
 
 function StoreList() {
     const dispatch = useDispatch();

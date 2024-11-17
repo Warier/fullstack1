@@ -2,6 +2,7 @@ import React from 'react';
 import { Row, Col, Form } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
 import { setSearchType, setExactMatch } from '../../store/gameSlice';
+import './styles.css';
 
 function AdvancedSearch() {
     const dispatch = useDispatch();

@@ -1,70 +1,126 @@
-# Getting Started with Create React App
+# Game Price Tracker
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center" style="display: display_block">
 
-## Available Scripts
+[![image_info](https://img.shields.io/badge/API-CheapShark-green)](https://www.cheapshark.com/api/)
+![image_info](https://img.shields.io/badge/Linguagem-JavaScript-yellow)
+![image_info](https://img.shields.io/badge/Framework-React-blue)
 
-In the project directory, you can run:
+</div>
 
-### `npm start`
+<div align="center">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" width="100" height="100" />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" width="100" height="100" />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" width="100" height="100"/>
+</div>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 👨‍🎓 Desenvolvedor
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<div align="center">
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/Warier">
+        <img src="https://lh3.googleusercontent.com/a/ACg8ocIwl5NyxTOQmezQxUyUOGbP5cZ8EH2aJCz3dD2TEshPhnrDdBmS=s288-c-no" width="100px;" alt="Felippe Nunes"/><br>
+        <sub>
+          <b>Felippe Machado Nunes de Oliveira - 2347946</b>
+        </sub>
+      </a>
+    </td>
+  </tr>
+</table>
+</div>
 
-### `npm test`
+<div align="center">
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## 🎮 Visão Geral
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Game Price Tracker é uma aplicação web que permite aos usuários encontrar as melhores ofertas de jogos digitais para PC. Utilizando a API do CheapShark, o aplicativo compara preços entre diversas lojas online, ajudando os usuários a economizar em suas compras de jogos.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## ⚙️ Tecnologias Principais
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **React.js**: Framework JavaScript para construção da interface
+- **Redux**: Gerenciamento de estado da aplicação
+- **React Bootstrap**: Framework CSS para design responsivo
+- **Axios**: Cliente HTTP para requisições à API
+- **CheapShark API**: API de preços de jogos
 
-### `npm run eject`
+## 🔍 Recursos e Funcionalidades
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Busca Avançada
+- Pesquisa por nome do jogo
+- Busca por ID da Steam
+- Opção de correspondência exata
+- Validação em tempo real dos campos
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Visualização de Dados
+- Cards informativos dos jogos
+- Preços atualizados
+- Links diretos para ofertas
+- Lista de lojas participantes
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Interface
+- Design responsivo
+- Feedback visual de carregamento
+- Tratamento de erros
+- Navegação intuitiva
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 📁 Estrutura e Organização
 
-## Learn More
+```
+src/
+├── components/          # Componentes React reutilizáveis
+├── services/           # Serviços e configuração da API
+├── store/              # Configuração e slices do Redux
+├── utils/              # Utilitários e constantes
+└── App.js              # Componente principal
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🚀 Como Executar
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. **Pré-requisitos**
+    - Node.js instalado
+    - NPM ou Yarn
 
-### Code Splitting
+2. **Instalação**
+   ```bash
+   # Clone o repositório
+   git clone https://github.com/Warier/fullstack1.git
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+   # Instale as dependências
+   npm install
+   ```
 
-### Analyzing the Bundle Size
+3. **Execução**
+   ```bash
+   # Inicie o servidor de desenvolvimento
+   npm start
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 🌐 Demonstração
 
-### Making a Progressive Web App
+Acesse a versão online do projeto:
+[Game Price Tracker](URL)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 🔧 Implementações Técnicas
 
-### Advanced Configuration
+### Redux
+- Gerenciamento centralizado de estado
+- Actions para operações assíncronas
+- Reducers para manipulação de dados
+- Selectors para acesso otimizado
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Componentes
+- Componentização modular
+- Reutilização de código
+- Props typing
+- Lifecycle management
 
-### Deployment
+### Otimizações
+- Lazy loading de componentes
+- Memoização de funções
+- Debounce em pesquisas
+- Cache de requisições
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
