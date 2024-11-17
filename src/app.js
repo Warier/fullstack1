@@ -1,5 +1,4 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css';
 import React, { useState, useCallback } from 'react';
 import { Container, Row, Col, Form, Card, Button, Spinner } from 'react-bootstrap';
 import axios from 'axios';
