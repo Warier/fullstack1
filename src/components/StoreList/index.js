@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import { Row, Col, Card } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
+import { getStores } from '../../services/api';
 import { setStores } from '../../store/gameSlice';
-import api from '../../services/api';
 
 function StoreList() {
     const dispatch = useDispatch();
@@ -11,8 +11,8 @@ function StoreList() {
     useEffect(() => {
         const fetchStores = async () => {
             try {
-                const response = await api.get('/stores');
-                dispatch(setStores(response.data.filter(store => store.isActive)));
+                const data = await getStores();
+                dispatch(setStores(data.filter(store => store.isActive)));
             } catch (error) {
                 console.error('Erro ao carregar lojas:', error);
             }
@@ -21,16 +21,19 @@ function StoreList() {
     }, [dispatch]);
 
     return (
-        <Row className="mb-4">
+        <Row className="stores-grid">
             {stores.map((store) => (
-                <Col key={store.storeID} md={3} className="mb-3">
-                    <Card>
+                <Col key={store.storeID} md={3} lg={2} className="mb-3">
+                    <Card className="store-card bg-dark">
                         <Card.Body>
                             <img
                                 src={`https://www.cheapshark.com${store.images.banner}`}
                                 alt={store.storeName}
-                                style={{ width: '100%', height: '50px', objectFit: 'contain' }}
+                                className="store-banner w-100"
                             />
+                            <h6 className="text-white text-center mt-2">
+                                {store.storeName}
+                            </h6>
                         </Card.Body>
                     </Card>
                 </Col>
