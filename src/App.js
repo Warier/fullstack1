@@ -6,6 +6,7 @@ import SearchBar from './components/SearchBar';
 import GameList from './components/GameList';
 import StoreList from './components/StoreList';
 import AdvancedSearch from './components/AdvancedSearch';
+import "./App.css";
 
 function App() {
     const [activeComponent, setActiveComponent] = useState('search');
