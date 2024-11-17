@@ -1,12 +1,8 @@
 # Game Price Tracker
 
-<div align="center" style="display: display_block">
-
 [![image_info](https://img.shields.io/badge/API-CheapShark-green)](https://www.cheapshark.com/api/)
 ![image_info](https://img.shields.io/badge/Linguagem-JavaScript-yellow)
 ![image_info](https://img.shields.io/badge/Framework-React-blue)
-
-</div>
 
 <div align="center">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" width="100" height="100" />
@@ -16,7 +12,6 @@
 
 ## 👨‍🎓 Desenvolvedor
 
-<div align="center">
 <table>
   <tr>
     <td align="center">
@@ -29,10 +24,6 @@
     </td>
   </tr>
 </table>
-</div>
-
-<div align="center">
-
 
 ## 🎮 Visão Geral
 
@@ -80,8 +71,8 @@ src/
 ## 🚀 Como Executar
 
 1. **Pré-requisitos**
-    - Node.js instalado
-    - NPM ou Yarn
+   - Node.js instalado
+   - NPM ou Yarn
 
 2. **Instalação**
    ```bash
@@ -101,7 +92,7 @@ src/
 ## 🌐 Demonstração
 
 Acesse a versão online do projeto:
-[Game Price Tracker](URL)
+[Game Price Tracker](https://ad66-152-67-41-200.ngrok-free.app/)
 
 ## 🔧 Implementações Técnicas
 
@@ -122,5 +113,3 @@ Acesse a versão online do projeto:
 - Memoização de funções
 - Debounce em pesquisas
 - Cache de requisições
-
-
