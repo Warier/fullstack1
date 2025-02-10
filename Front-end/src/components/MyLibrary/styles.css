@@ -1,0 +1,18 @@
+.game-card {
+    height: 100%;
+    transition: transform 0.2s;
+    background-color: #ffffff; /* Fundo branco para o card */
+    border: none;             /* Sem borda */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Sombra leve */
+}
+
+.game-card:hover {
+    transform: translateY(-5px); /* Leve efeito de elevação ao passar o mouse */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Sombra mais intensa no hover */
+}
+
+.game-thumb {
+    height: 200px;
+    object-fit: cover;  /* Garante que a imagem cubra o espaço */
+    border-bottom: 1px solid #eee; /* Linha separadora entre imagem e corpo */
+}
