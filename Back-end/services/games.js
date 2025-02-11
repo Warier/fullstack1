@@ -15,8 +15,6 @@ async function addGame(userId, gameData) {
         const libraryEntry = {
             userId,
             ...gameData,
-            rating: null, //Inicializa
-            comment: '',
         };
         const result = await libraryCollection.insertOne(libraryEntry);
         return result;
@@ -76,6 +74,4 @@ async function searchGames(userId, searchTerm) {
         }
     }
 }
-
-
 module.exports = { addGame, getGames, searchGames };

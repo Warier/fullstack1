@@ -7,7 +7,7 @@ import GameList from './components/GameList';
 import StoreList from './components/StoreList';
 import AdvancedSearch from './components/AdvancedSearch';
 import Login from './components/Login';
-import MyLibrary from './components/MyLibrary'; // Importa MyLibrary
+import MyLibrary from './components/MyLibrary';
 import { Routes, Route, Link, useNavigate } from 'react-router-dom';
 import './App.css';
 
@@ -55,7 +55,7 @@ function App() {
                     <Routes>
                         <Route path="/" element={<><SearchBar /><AdvancedSearch /><GameList /></>} />
                         <Route path="/stores" element={<StoreList />} />
-                        <Route path="/my-library" element={isLoggedIn ? <MyLibrary /> : <Login setIsLoggedIn={setIsLoggedIn} />} /> {/*Usa MyLibrary*/}
+                        <Route path="/my-library" element={isLoggedIn ? <MyLibrary /> : <Login setIsLoggedIn={setIsLoggedIn} />} /> {}
                     </Routes>
 
                 </Container>

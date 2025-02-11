@@ -2,8 +2,9 @@ const express = require('express');
 const router = express.Router();
 const jwt = require('jsonwebtoken');
 const { findUserByUsername } = require('../services/user');
+const cache = require("../cache");
 
-router.post('/login', async (req, res) => {
+router.post('/login', cache.invalidate('/api/library'),async (req, res) => {
     try {
         const { username, password } = req.body;
 
