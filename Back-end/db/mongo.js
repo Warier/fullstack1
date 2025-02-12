@@ -32,7 +32,11 @@ async function conn() {
             version: ServerApiVersion.v1,
             strict: true,
             deprecationErrors: true,
-        }
+        },
+        maxPoolSize: 10,
+        minPoolSize: 2,
+        maxIdleTimeMS: 30000,
+        waitQueueTimeoutMS: 5000,
     });
 
     try {
